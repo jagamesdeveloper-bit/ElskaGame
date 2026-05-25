@@ -1,0 +1,16 @@
+[[headers]]
+  for = "/ElskaWebGL/Build/*.js.br"
+  [headers.values]
+    Content-Encoding = "br"
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/ElskaWebGL/Build/*.wasm.br"
+  [headers.values]
+    Content-Encoding = "br"
+    Content-Type = "application/wasm"
+
+[[headers]]
+  for = "/ElskaWebGL/Build/*.data.br"
+  [headers.values]
+    Content-Encoding = "br"
