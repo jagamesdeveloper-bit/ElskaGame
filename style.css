@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Galindo', sans-serif;
+  background: #0d0d0f;
+  color: #e8e8f0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ---- TITLE SCREEN ---- */
+#title-screen {
+  padding: 5rem 1.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #4251f5;
+}
+
+.studio {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.j { color: #4caf50; }   /* green */
+.a { color: #2196f3; }   /* blue  */
+
+/* ---- PLAY STACK (button at bottom of icon) ---- */
+#play-stack {
+  position: relative;
+  width: 300px;              /* matches the icon */
+  margin: 2rem auto 0;
+}
+
+#app-icon {
+  width: 300px;
+  height: 300px;
+  border-radius: 48px;
+  display: block;
+}
+
+#play-btn {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 1;
+
+  font-family: 'Galindo', sans-serif;
+  font-size: 1.3rem;
+  color: #0d0d0f;
+  background: #f5c842;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#play-btn:hover {
+  background: #ffd95e;
+}
+
+/* ---- GAME CONTAINER ---- */
+#game-container {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: #1a1a2e;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-container.active {
+  display: flex;
+}
+
+#game-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
