@@ -136,14 +136,14 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/2122bf1758b9ba8a085a19a773f19ffa.loader.js'
+            unityLoader.src = 'Build/663237f096e17a4dcf8c151f5175eeaa.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/b0427d362d9489dd43da1c56772526b8.data.unityweb',
+                        dataUrl: 'Build/83a37c5cfe75acbda9548bd851ddcbb1.data.unityweb',
                         frameworkUrl: 'Build/04281abe157dd3ce42c0125082bacddb.framework.js.unityweb',
-                        codeUrl: 'Build/8106ff2bf2cd52eae52791bb9dd239e2.wasm.unityweb',
+                        codeUrl: 'Build/fe18a5cb8f4fa4f8d350878aefb1e9c5.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'JA Studios',
                         productName: 'Elska',
