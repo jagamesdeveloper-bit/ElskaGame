@@ -4,7 +4,7 @@ const gameContainer = document.getElementById('game-container');
 const gameFrame = document.getElementById('game-frame');
 
 playBtn.addEventListener('click', () => {
-  gameFrame.src = 'elskawebgl/index.html';
+  gameFrame.src = 'https://playgama.com/export/game/elska';
   titleScreen.style.display = 'none';
   gameContainer.classList.add('active');
 });
